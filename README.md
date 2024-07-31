@@ -63,9 +63,9 @@ You can run it in a screen instance, or you can install pm2 to run your instance
 ## Docker container
 
 
-To build the docker image: `docker build -t no-dev-fee-stratum-proxy .`
+To build the docker image: `docker build -t stratum-proxy .`
 
-To run the docker image: `docker run -d --name my-stratum-proxy -e "WALLET=0xE151c757784Ee1d9Ea4970BC51542384E5106395.DROID" -e "REMOTE_HOST=eu1.ethermine.org" -e "REMOTE_PORT=4444" -e "REMOTE_PASSWORD=x" -p 4444:4444 no-dev-fee-stratum-proxy`
+To run the docker image: `docker run -d --name stratum-proxy -e "WALLET=0xE151c757784Ee1d9Ea4970BC51542384E5106395.DROID" -e "REMOTE_HOST=eu1.ethermine.org" -e "REMOTE_PORT=4444" -e "REMOTE_PASSWORD=x" -p 4444:4444 stratum-proxy`
 
 In the example above you can point your miner to the IP address running the proxy on port 4444.
 
